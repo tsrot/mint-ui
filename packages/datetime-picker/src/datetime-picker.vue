@@ -49,11 +49,11 @@
 </style>
 
 <script type="text/babel">
-  import picker from 'mint-ui/packages/picker/index.js';
-  import popup from 'mint-ui/packages/popup/index.js';
+  import picker from 'mint-ui-xlq/packages/picker/index.js';
+  import popup from 'mint-ui-xlq/packages/popup/index.js';
   if (process.env.NODE_ENV === 'component') {
-    require('mint-ui/packages/picker/style.css');
-    require('mint-ui/packages/popup/style.css');
+    require('mint-ui-xlq/packages/picker/style.css');
+    require('mint-ui-xlq/packages/popup/style.css');
   }
 
   const FORMAT_MAP = {

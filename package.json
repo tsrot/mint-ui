@@ -1,6 +1,6 @@
 {
-  "name": "mint-ui",
-  "version": "2.2.13",
+  "name": "mint-ui-xlq-xlq",
+  "version": "1.0.2",
   "description": "Mobile UI elements for vue.js",
   "keywords": [
     "component",
@@ -8,7 +8,7 @@
     "mobile",
     "eleme"
   ],
-  "main": "lib/mint-ui.common.js",
+  "main": "lib/mint-ui-xlq.common.js",
   "style": "lib/style.css",
   "files": [
     "lib",
@@ -28,13 +28,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ElemeFE/mint-ui.git"
+    "url": "git+https://github.com/tsrot/mint-ui-xlq.git"
   },
-  "homepage": "https://github.com/ElemeFE/mint-ui#readme",
+  "homepage": "https://github.com/tsrot/mint-ui-xlq.git#readme",
   "bugs": {
-    "url": "https://github.com/ElemeFE/mint-ui/issues"
+    "url": "https://github.com/tsrot/mint-ui-xlq/issues"
   },
-  "author": "elemefe",
+  "author": "xlq",
   "license": "MIT",
   "dependencies": {
     "array-find-index": "^1.0.2",

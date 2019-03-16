@@ -50,11 +50,11 @@
 </template>
 
 <script>
-import { once } from 'mint-ui/src/utils/dom';
-import XCell from 'mint-ui/packages/cell/index.js';
-import Clickoutside from 'mint-ui/src/utils/clickoutside';
+import { once } from 'mint-ui-xlq/src/utils/dom';
+import XCell from 'mint-ui-xlq/packages/cell/index.js';
+import Clickoutside from 'mint-ui-xlq/src/utils/clickoutside';
 if (process.env.NODE_ENV === 'component') {
-  require('mint-ui/packages/cell/style.css');
+  require('mint-ui-xlq/packages/cell/style.css');
 }
 
 /**

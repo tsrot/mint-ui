@@ -21,9 +21,9 @@
 </template>
 
 <script>
-import XCell from 'mint-ui/packages/cell/index.js';
+import XCell from 'mint-ui-xlq/packages/cell/index.js';
 if (process.env.NODE_ENV === 'component') {
-  require('mint-ui/packages/cell/style.css');
+  require('mint-ui-xlq/packages/cell/style.css');
 }
 /**
  * mt-radio

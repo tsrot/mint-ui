@@ -1,5 +1,6 @@
 <template>
   <a class="mint-cell" :href="href">
+    <span>1111</span>
     <span class="mint-cell-mask" v-if="isLink"></span>
     <div class="mint-cell-left">
       <slot name="left"></slot>
@@ -29,7 +30,7 @@
 
 <script>
 if (process.env.NODE_ENV === 'component') {
-  require('mint-ui/packages/font/style.css');
+  require('mint-ui-xlq/packages/font/style.css');
 }
 
 /**
