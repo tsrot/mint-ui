@@ -1,6 +1,6 @@
 <template>
   <a class="mint-cell" :href="href">
-    <span>1111</span>
+  222
     <span class="mint-cell-mask" v-if="isLink"></span>
     <div class="mint-cell-left">
       <slot name="left"></slot>
@@ -73,7 +73,7 @@ export default {
 
         this.$nextTick(() => {
           this.added = true;
-          this.$el.addEventListener('click', this.handleClick);
+          // this.$el.addEventListener('click', this.handleClick);
         });
         return resolved.fullPath || resolved.path;
       }
