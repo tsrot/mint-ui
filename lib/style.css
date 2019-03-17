@@ -209,16 +209,15 @@
     padding: 0 10px;
     width: 100%;
 }
-.mint-cell-mask {}
-.mint-cell-mask::after {
-    background-color:#000;
-    content:" ";
-    opacity:0;
+.mint-cell-mask {
+    background-color: #000;
+    content: " ";
+    opacity: 0.5;
     top:0;
     right:0;
     bottom:0;
     left:0;
-    position:absolute;
+    position: absolute;
 }
 .mint-cell-mask:active::after {
     opacity:.1;
