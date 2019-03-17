@@ -1,5 +1,5 @@
 <template>
-  <div class="mint-cell" :href="href">
+  <a class="mint-cell" :href="href">
     <span class="mint-cell-mask" v-if="isLink"></span>
     <div class="mint-cell-left">
       <slot name="left"></slot>
@@ -24,7 +24,7 @@
     <div class="mint-cell-right">
       <slot name="right"></slot>
     </div>
-  </div>
+  </a>
 </template>
 
 <script>
