@@ -1,6 +1,6 @@
 <template>
   <a class="mint-cell" :href="href">
-    <span class="mint-cell-mask" v-if="isLink"></span>
+    <span class="mint-cell-mask-1" v-if="isLink"></span>
     <div class="mint-cell-left">
       <slot name="left"></slot>
     </div>
@@ -95,6 +95,12 @@ export default {
   @import "../../../src/style/var.css";
 
   @component-namespace mint {
+    .mint-cell-mask-1{
+      background-color: #000;
+      content: " ";
+      opacity: 0.5;
+      position: absolute 0;
+    }
     @component cell {
       background-color: $color-white;
       box-sizing: border-box;
@@ -136,10 +142,12 @@ export default {
       }
 
       @descendent mask {
-        background-color: #000;
-        content: " ";
-        opacity: 0.5;
-        position: absolute 0;
+        &::after {
+          background-color: #000;
+          content: " ";
+          opacity: 0;
+          position: absolute 0;
+        }
 
         &:active::after {
           opacity: .1;
