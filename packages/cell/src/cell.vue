@@ -82,7 +82,7 @@ export default {
 
   methods: {
     handleClick($event) {
-      if (this.href !== undefined || this.href !== null || this.href !== [] || this.href !== {}) {
+      if (this.href !== undefined || this.href !== null || this.href !== [] || this.href !== {} || this.href !== '') {
         $event.preventDefault();
         this.$router.push(this.href);
       }
