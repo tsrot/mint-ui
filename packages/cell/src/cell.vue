@@ -72,7 +72,6 @@ export default {
 
         this.$nextTick(() => {
           this.added = true;
-          // this.$el.addEventListener('click', this.handleClick);
         });
         return resolved.fullPath || resolved.path;
       }
