@@ -76,16 +76,14 @@ export default {
         });
         return resolved.fullPath || resolved.path;
       }
-      return this.to || 'javascript:void(0);';
+      return this.to;
     }
   },
 
   methods: {
     handleClick($event) {
-      if (this.href !== undefined || this.href !== null || this.href !== [] || this.href !== {} || this.href !== '') {
-        $event.preventDefault();
-        this.$router.push(this.href);
-      }
+      $event.preventDefault();
+      this.$router.push(this.href);
     }
   }
 };
