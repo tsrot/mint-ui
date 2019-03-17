@@ -76,7 +76,7 @@ export default {
         });
         return resolved.fullPath || resolved.path;
       }
-      return this.to;
+      return this.to || 'javascript:void(0);';
     }
   },
 
