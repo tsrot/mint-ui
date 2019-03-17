@@ -72,6 +72,7 @@ export default {
 
         this.$nextTick(() => {
           this.added = true;
+          this.$el.addEventListener('click', this.handleClick);
         });
         return resolved.fullPath || resolved.path;
       }
@@ -81,8 +82,10 @@ export default {
 
   methods: {
     handleClick($event) {
-      $event.preventDefault();
-      this.$router.push(this.href);
+      if (this.href !== undefined || this.href !== null || this.href !== []) {
+        $event.preventDefault();
+        this.$router.push(this.href);
+      }
     }
   }
 };
