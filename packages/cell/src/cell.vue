@@ -1,6 +1,6 @@
 <template>
   <a class="mint-cell" :href="href">
-    <span class="mint-cell-mask" v-if="isLink"></span>
+    <span class="mint-cell-mask1" v-if="isLink"></span>
     <div class="mint-cell-left">
       <slot name="left"></slot>
     </div>
